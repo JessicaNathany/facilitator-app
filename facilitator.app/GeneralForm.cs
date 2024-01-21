@@ -1,4 +1,4 @@
-namespace facilitator.app
+﻿namespace facilitator.app
 {
     public partial class GeneralForm : Form
     {
@@ -7,30 +7,17 @@ namespace facilitator.app
             InitializeComponent();
         }
 
-        private void btnJsonFormatter_Click(object sender, EventArgs e)
+        private void ButtonClose(object sender, EventArgs e)
         {
-
-
-            /*
-             *  try
-            {
-                var jsonDataUrl = richTextBox1.Text;
-
-                var parsedJson = JToken.Parse(jsonDataUrl);
-                string formattedJson = parsedJson.ToString(Newtonsoft.Json.Formatting.Indented);
-
-                jsonformattedData.Text = formattedJson;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("JSON invalid. " + ex.Message);
-
-                // Limpa os campos de texto.
-                jsonformattedData.Clear();
-                richTextBox1.Clear();
-            }
-             */
+            Close();
         }
 
+        private void ButtonJsonFormat(object sender, EventArgs e)
+        {
+            var formFormatter = new FormFormatters();
+            var generalForm = new GeneralForm();
+            formFormatter.Show();
+            generalForm.Close();
+        }
     }
 }

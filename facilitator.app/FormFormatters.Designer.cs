@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            richTextBox1 = new RichTextBox();
-            button1 = new Button();
+            jsonDataUrl = new RichTextBox();
+            btnProcess = new Button();
+            jsonDataFormated = new RichTextBox();
+            btnCopy = new Button();
+            btnClose = new Button();
+            btnClear = new Button();
             SuspendLayout();
             // 
             // label1
@@ -42,30 +46,73 @@
             label1.TabIndex = 0;
             label1.Text = "JSON Data/URL";
             // 
-            // richTextBox1
+            // jsonDataUrl
             // 
-            richTextBox1.Location = new Point(23, 55);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1062, 283);
-            richTextBox1.TabIndex = 1;
-            richTextBox1.Text = "";
+            jsonDataUrl.Location = new Point(23, 55);
+            jsonDataUrl.Name = "jsonDataUrl";
+            jsonDataUrl.Size = new Size(1080, 252);
+            jsonDataUrl.TabIndex = 1;
+            jsonDataUrl.Text = "";
             // 
-            // button1
+            // btnProcess
             // 
-            button1.Location = new Point(420, 352);
-            button1.Name = "button1";
-            button1.Size = new Size(120, 35);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnProcess.Location = new Point(23, 326);
+            btnProcess.Name = "btnProcess";
+            btnProcess.Size = new Size(120, 35);
+            btnProcess.TabIndex = 2;
+            btnProcess.Text = "Process";
+            btnProcess.UseVisualStyleBackColor = true;
+            btnProcess.Click += ButtonProcess;
+            // 
+            // jsonDataFormated
+            // 
+            jsonDataFormated.Enabled = false;
+            jsonDataFormated.Location = new Point(12, 383);
+            jsonDataFormated.Name = "jsonDataFormated";
+            jsonDataFormated.Size = new Size(1100, 252);
+            jsonDataFormated.TabIndex = 3;
+            jsonDataFormated.Text = "";
+            // 
+            // btnCopy
+            // 
+            btnCopy.Location = new Point(171, 326);
+            btnCopy.Name = "btnCopy";
+            btnCopy.Size = new Size(120, 35);
+            btnCopy.TabIndex = 4;
+            btnCopy.Text = "Copy";
+            btnCopy.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            btnClose.Location = new Point(992, 658);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(120, 35);
+            btnClose.TabIndex = 6;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += ButtonClose;
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(319, 326);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(120, 35);
+            btnClear.TabIndex = 7;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += ButtonClear;
             // 
             // FormFormatters
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1107, 656);
-            Controls.Add(button1);
-            Controls.Add(richTextBox1);
+            ClientSize = new Size(1131, 725);
+            Controls.Add(btnClear);
+            Controls.Add(btnClose);
+            Controls.Add(btnCopy);
+            Controls.Add(jsonDataFormated);
+            Controls.Add(btnProcess);
+            Controls.Add(jsonDataUrl);
             Controls.Add(label1);
             Name = "FormFormatters";
             Text = "FormFormatters";
@@ -76,7 +123,11 @@
         #endregion
 
         private Label label1;
-        private RichTextBox richTextBox1;
-        private Button button1;
+        private RichTextBox jsonDataUrl;
+        private Button btnProcess;
+        private RichTextBox jsonDataFormated;
+        private Button btnCopy;
+        private Button btnClose;
+        private Button btnClear;
     }
 }

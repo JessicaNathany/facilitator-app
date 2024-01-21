@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "epLw9HIZFi5ge4E6n9SdGoDl7hV2Q3uWbgVlb2TtoADUtwC01hNFK5Y8yRYAssHaZwW8Dg+aUAJxtIWDBomBjA==",
+  "dgSpecHash": "hc2J/2JkuQbU+tbb9D+QEJBfhS7xJkBWJ5VmD/YVCZVqsh9IBwXgZV7TgGoU6P7DgqRv2uiNVqjNhiu94ayz6w==",
   "success": true,
   "projectFilePath": "C:\\GitHub\\facilitator-app\\facilitator.app\\facilitator.app.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jnath\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

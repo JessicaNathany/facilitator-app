@@ -3,12 +3,12 @@
     partial class GeneralForm
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,163 +23,175 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            groupBox1 = new GroupBox();
+            btnCode = new Button();
+            btnHtmlFormat = new Button();
             btnJsonFormatter = new Button();
-            btnHtmlFormatter = new Button();
-            btnGuidGenerator = new Button();
-            btnGeneratorHashes = new Button();
-            btnPasswordGenerator = new Button();
+            label1 = new Label();
             groupGenerators = new GroupBox();
-            button3 = new Button();
-            button2 = new Button();
-            groupFormatters = new GroupBox();
-            groupAnalisys = new GroupBox();
+            btnNumberCard = new Button();
             button1 = new Button();
+            btnHashesGenerators = new Button();
+            btnGeneratorPassword = new Button();
+            btnGeneratorGuid = new Button();
+            btnClose = new Button();
+            groupBox1.SuspendLayout();
             groupGenerators.SuspendLayout();
-            groupFormatters.SuspendLayout();
-            groupAnalisys.SuspendLayout();
             SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(btnCode);
+            groupBox1.Controls.Add(btnHtmlFormat);
+            groupBox1.Controls.Add(btnJsonFormatter);
+            groupBox1.Location = new Point(26, 68);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(715, 161);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Formatters";
+            // 
+            // btnCode
+            // 
+            btnCode.Location = new Point(344, 41);
+            btnCode.Name = "btnCode";
+            btnCode.Size = new Size(130, 41);
+            btnCode.TabIndex = 3;
+            btnCode.Text = "SQL Format";
+            btnCode.UseVisualStyleBackColor = true;
+            // 
+            // btnHtmlFormat
+            // 
+            btnHtmlFormat.Location = new Point(182, 41);
+            btnHtmlFormat.Name = "btnHtmlFormat";
+            btnHtmlFormat.Size = new Size(115, 43);
+            btnHtmlFormat.TabIndex = 1;
+            btnHtmlFormat.Text = "HTML Format";
+            btnHtmlFormat.UseVisualStyleBackColor = true;
             // 
             // btnJsonFormatter
             // 
-            btnJsonFormatter.Location = new Point(15, 34);
+            btnJsonFormatter.Location = new Point(35, 41);
             btnJsonFormatter.Name = "btnJsonFormatter";
-            btnJsonFormatter.Size = new Size(113, 34);
-            btnJsonFormatter.TabIndex = 1;
-            btnJsonFormatter.Text = "JSON Formatter";
+            btnJsonFormatter.Size = new Size(115, 43);
+            btnJsonFormatter.TabIndex = 0;
+            btnJsonFormatter.Text = "JSON Format";
             btnJsonFormatter.UseVisualStyleBackColor = true;
-            btnJsonFormatter.Click += btnJsonFormatter_Click;
+            btnJsonFormatter.Click += ButtonJsonFormat;
             // 
-            // btnHtmlFormatter
+            // label1
             // 
-            btnHtmlFormatter.Location = new Point(146, 34);
-            btnHtmlFormatter.Name = "btnHtmlFormatter";
-            btnHtmlFormatter.Size = new Size(113, 34);
-            btnHtmlFormatter.TabIndex = 2;
-            btnHtmlFormatter.Text = "HTML Formatter";
-            btnHtmlFormatter.UseVisualStyleBackColor = true;
-            // 
-            // btnGuidGenerator
-            // 
-            btnGuidGenerator.Location = new Point(287, 48);
-            btnGuidGenerator.Name = "btnGuidGenerator";
-            btnGuidGenerator.Size = new Size(113, 31);
-            btnGuidGenerator.TabIndex = 4;
-            btnGuidGenerator.Text = "Guid Generator";
-            btnGuidGenerator.UseVisualStyleBackColor = true;
-            // 
-            // btnGeneratorHashes
-            // 
-            btnGeneratorHashes.Location = new Point(15, 48);
-            btnGeneratorHashes.Name = "btnGeneratorHashes";
-            btnGeneratorHashes.Size = new Size(113, 31);
-            btnGeneratorHashes.TabIndex = 5;
-            btnGeneratorHashes.Text = "Hashes Generators";
-            btnGeneratorHashes.UseVisualStyleBackColor = true;
-            // 
-            // btnPasswordGenerator
-            // 
-            btnPasswordGenerator.Location = new Point(146, 48);
-            btnPasswordGenerator.Name = "btnPasswordGenerator";
-            btnPasswordGenerator.Size = new Size(113, 31);
-            btnPasswordGenerator.TabIndex = 6;
-            btnPasswordGenerator.Text = "Password Generator";
-            btnPasswordGenerator.UseVisualStyleBackColor = true;
+            label1.AutoSize = true;
+            label1.Location = new Point(26, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(84, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Facilitator App";
             // 
             // groupGenerators
             // 
-            groupGenerators.Controls.Add(button3);
-            groupGenerators.Controls.Add(button2);
-            groupGenerators.Controls.Add(btnGeneratorHashes);
-            groupGenerators.Controls.Add(btnGuidGenerator);
-            groupGenerators.Controls.Add(btnPasswordGenerator);
-            groupGenerators.Location = new Point(27, 132);
+            groupGenerators.Controls.Add(btnNumberCard);
+            groupGenerators.Controls.Add(button1);
+            groupGenerators.Controls.Add(btnHashesGenerators);
+            groupGenerators.Controls.Add(btnGeneratorPassword);
+            groupGenerators.Controls.Add(btnGeneratorGuid);
+            groupGenerators.Location = new Point(25, 255);
             groupGenerators.Name = "groupGenerators";
-            groupGenerators.Size = new Size(753, 139);
-            groupGenerators.TabIndex = 7;
+            groupGenerators.Size = new Size(716, 193);
+            groupGenerators.TabIndex = 2;
             groupGenerators.TabStop = false;
             groupGenerators.Text = "Generators";
             // 
-            // button3
+            // btnNumberCard
             // 
-            button3.Location = new Point(567, 48);
-            button3.Name = "button3";
-            button3.Size = new Size(139, 31);
-            button3.TabIndex = 8;
-            button3.Text = "Test Data Generator";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(430, 48);
-            button2.Name = "button2";
-            button2.Size = new Size(113, 31);
-            button2.TabIndex = 7;
-            button2.Text = "Barcode Generator";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // groupFormatters
-            // 
-            groupFormatters.Controls.Add(btnJsonFormatter);
-            groupFormatters.Controls.Add(btnHtmlFormatter);
-            groupFormatters.Location = new Point(27, 12);
-            groupFormatters.Name = "groupFormatters";
-            groupFormatters.Size = new Size(753, 100);
-            groupFormatters.TabIndex = 8;
-            groupFormatters.TabStop = false;
-            groupFormatters.Text = "Formatters";
-            // 
-            // groupAnalisys
-            // 
-            groupAnalisys.Controls.Add(button1);
-            groupAnalisys.Location = new Point(28, 296);
-            groupAnalisys.Name = "groupAnalisys";
-            groupAnalisys.Size = new Size(747, 100);
-            groupAnalisys.TabIndex = 9;
-            groupAnalisys.TabStop = false;
-            groupAnalisys.Text = "Analisys";
+            btnNumberCard.Location = new Point(36, 118);
+            btnNumberCard.Name = "btnNumberCard";
+            btnNumberCard.Size = new Size(132, 43);
+            btnNumberCard.TabIndex = 4;
+            btnNumberCard.Text = "Number Card Generator";
+            btnNumberCard.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(14, 41);
+            button1.Location = new Point(511, 46);
             button1.Name = "button1";
-            button1.Size = new Size(140, 31);
-            button1.TabIndex = 0;
-            button1.Text = "Query SQL Analizye";
+            button1.Size = new Size(130, 43);
+            button1.TabIndex = 3;
+            button1.Text = "Test Data Generator";
             button1.UseVisualStyleBackColor = true;
+            // 
+            // btnHashesGenerators
+            // 
+            btnHashesGenerators.Location = new Point(345, 46);
+            btnHashesGenerators.Name = "btnHashesGenerators";
+            btnHashesGenerators.Size = new Size(132, 43);
+            btnHashesGenerators.TabIndex = 2;
+            btnHashesGenerators.Text = "Hashes Generators";
+            btnHashesGenerators.UseVisualStyleBackColor = true;
+            // 
+            // btnGeneratorPassword
+            // 
+            btnGeneratorPassword.Location = new Point(183, 46);
+            btnGeneratorPassword.Name = "btnGeneratorPassword";
+            btnGeneratorPassword.Size = new Size(132, 43);
+            btnGeneratorPassword.TabIndex = 1;
+            btnGeneratorPassword.Text = "Password Generator";
+            btnGeneratorPassword.UseVisualStyleBackColor = true;
+            // 
+            // btnGeneratorGuid
+            // 
+            btnGeneratorGuid.Location = new Point(36, 46);
+            btnGeneratorGuid.Name = "btnGeneratorGuid";
+            btnGeneratorGuid.Size = new Size(132, 43);
+            btnGeneratorGuid.TabIndex = 0;
+            btnGeneratorGuid.Text = "GUID/UID Generator";
+            btnGeneratorGuid.UseVisualStyleBackColor = true;
+            // 
+            // btnClose
+            // 
+            btnClose.Location = new Point(635, 478);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(106, 39);
+            btnClose.TabIndex = 3;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += ButtonClose;
             // 
             // GeneralForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 484);
-            Controls.Add(groupAnalisys);
-            Controls.Add(groupFormatters);
+            ClientSize = new Size(769, 539);
+            Controls.Add(btnClose);
             Controls.Add(groupGenerators);
+            Controls.Add(label1);
+            Controls.Add(groupBox1);
             Name = "GeneralForm";
-            Text = "Facilitator Tools";
-            Load += GeneralForm_Load;
+            Text = "GeneralForm";
+            groupBox1.ResumeLayout(false);
             groupGenerators.ResumeLayout(false);
-            groupFormatters.ResumeLayout(false);
-            groupAnalisys.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private GroupBox groupBox1;
         private Button btnJsonFormatter;
-        private Button btnHtmlFormatter;
-        private Button btnGuidGenerator;
-        private Button btnGeneratorHashes;
-        private Button btnPasswordGenerator;
+        private Label label1;
+        private Button btnCode;
+        private Button btnHtmlFormat;
         private GroupBox groupGenerators;
-        private GroupBox groupFormatters;
-        private Button button2;
-        private GroupBox groupAnalisys;
+        private Button btnHashesGenerators;
+        private Button btnGeneratorPassword;
+        private Button btnGeneratorGuid;
+        private Button btnNumberCard;
         private Button button1;
-        private Button button3;
+        private Button btnClose;
     }
 }
